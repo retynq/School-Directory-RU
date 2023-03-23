@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-<section class="vh-100" style="background-color: #eee;">
+<section style="background-color: #eee; height: 1000px;">
   <div class="container h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-lg-12 col-xl-11">
@@ -27,27 +27,51 @@
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="text" id="form3Example1c" class="form-control" />
-                      <label class="form-label" for="form3Example1c">Введите свой логин</label>
+                      <label class="form-label" for="form3Example1c">ФИО</label>
+                      <input type="text" id="form3Example1c" class="form-control" placeholder="Введите свое полное имя"/>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <label class="form-label" for="form3Example1c">Логин</label>
+                      <input type="text" id="form3Example1c" class="form-control" placeholder="Введите свой логин"/>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                    <label class="form-label" for="form3Example1c">Почта</label>
+                    <input type="email" id="form3Example1c" class="form-control" placeholder="Введите адрес своей почты"/>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                    <div class="form-outline flex-fill mb-0">
+                      <label class="form-label" for="form3Example1c">Изображение профиля</label>
+                      <input type="file" id="form3Example1c" class="form-control"/>
                     </div>
                   </div>
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example3c" class="form-control" />
-                      <label class="form-label" for="form3Example3c">Введите пароль</label>
+                      <label class="form-label" for="form3Example3c">Пароль</label>
+                      <input type="password" id="form3Example3c" class="form-control" placeholder="Введите пароль"/>
                     </div>
                   </div>
                   <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4c" class="form-control" />
-                      <label class="form-label" for="form3Example4c">Password</label>
+                      <label class="form-label" for="form3Example4cd">Подтверждение пароля</label>
+                      <input type="password" id="form3Example4cd" class="form-control" placeholder="Подтвердите свой пароль"/>
                     </div>
                   </div>
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-primary btn-lg">Register</button>
+                    <button type="button" class="btn btn-primary btn-lg">Создать аккаунт</button>
                   </div>
+                  <p>
+                    У вас уже есть аккаунт? - <a href="login.php">авторизируйтесь</a>
+                  </p>
                 </form>
               </div>
               <div class="col-md-10 col-lg-6 col-xl-5 d-flex align-items-center order-1 order-lg-2">
