@@ -1,0 +1,329 @@
+@font-face {
+    font-family: serif;
+    src: url(ptserif.zip);
+}
+h1 {
+    font-family: serif;
+}
+.main-div {
+    background-color:#fff;
+    height: 4000px;
+}
+.bg-skyblue {
+    background-color: #A1EFF9;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.news-body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+.news-container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.news-container .news-card{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin :20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(45deg,#380066, #c8a2c8);
+}
+.news-container .news-card img {
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.news-container .news-card:hover img {
+    left: 73%;
+    height: 500px;
+
+}
+.news-container .news-card .content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.news-container .news-card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.news-container .news-card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+}
+.news-container .news-card .content p {
+    color: #fff;
+}
+.news-container .news-card .content a {
+    position: relative;
+    color: #111;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+.link-a {
+    text-decoration: none;
+}
+.link-a:hover {
+    text-decoration: underline;
+}
+.purple-btn {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 7px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.card-container {
+	height: 350px;
+	width: 700px;
+	display: flex;
+	margin: auto;
+
+}
+.txt-holder{
+	height: 350px;
+	width: 70%;
+	position: relative;
+	left: 0;
+	transition: 2s;
+}
+.img-holder {
+	height: 350px;
+	width: 30%;
+	position: relative;
+	right: 0;
+	transition: 2s;
+}
+.card-container:hover .txt-holder {
+	left: 30%;
+}
+.card-container:hover .img-holder {
+	right: 70%;
+}
+.txt-holder2{
+	height: 350px;
+	width: 70%;
+	position: relative;
+	right: 0;
+	transition: 2s;
+}
+.img-holder2 {
+	height: 350px;
+	width: 30%;
+	position: relative;
+	left: 0;
+	transition: 2s;
+    overflow: hidden;
+    z-index: 1;
+}
+.card-container:hover .txt-holder2 {
+	right: 30%;
+}
+.card-container:hover .img-holder2 {
+	left: 70%;
+}
+.css-selector {
+    background: linear-gradient(284deg, #66146b, #8ed8ee, #4b558c, #7044c8);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 28%}
+    50%{background-position:100% 73%}
+    100%{background-position:0% 28%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 28%}
+    50%{background-position:100% 73%}
+    100%{background-position:0% 28%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 28%}
+    50%{background-position:100% 73%}
+    100%{background-position:0% 28%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 28%}
+    50%{background-position:100% 73%}
+    100%{background-position:0% 28%}
+}
+
+.css-selector2 {
+    background: linear-gradient(132deg, #4328ae, #36aae1, #b38df2, #801f8a);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName2 59s ease infinite;
+    -moz-animation: AnimationName2 59s ease infinite;
+    -o-animation: AnimationName2 59s ease infinite;
+    animation: AnimationName2 59s ease infinite;
+}
+
+@-webkit-keyframes AnimationName2 {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+@-moz-keyframes AnimationName2 {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+@-o-keyframes AnimationName2 {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+@keyframes AnimationName2 {
+    0%{background-position:78% 0%}
+    50%{background-position:23% 100%}
+    100%{background-position:78% 0%}
+}
+.gradientimg {
+	display: inline-block;
+	position: relative;    
+	line-height: 0;
+}
+.gradientimg:after {
+	content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to left, #380066, #c8a2c8);
+	opacity: 0.3;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container-footer{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	flex-wrap: wrap;
+    display: flex;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
