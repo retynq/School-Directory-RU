@@ -23,52 +23,20 @@
             <div class="row justify-content-center">
               <div class="col-md-10 col-lg-6 col-xl-6 order-2 order-lg-1">
                 <p class="text-center h2 fw-bold mb-5 mx-1 mx-md-4 mt-4">Зарегистрироваться</p>
-                <form class="mx-1 mx-md-4" action="" method="" enctype="multipart/form-data">
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example1c">ФИО</label>
-                      <input type="text" id="form3Example1c" class="form-control" placeholder="Введите свое полное имя"/>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example1c">Логин</label>
-                      <input type="text" id="form3Example1c" class="form-control" placeholder="Введите свой логин"/>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                    <label class="form-label" for="form3Example1c">Почта</label>
-                    <input type="email" id="form3Example1c" class="form-control" placeholder="Введите адрес своей почты"/>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example1c">Изображение профиля</label>
-                      <input type="file" id="form3Example1c" class="form-control"/>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example3c">Пароль</label>
-                      <input type="password" id="form3Example3c" class="form-control" placeholder="Введите пароль"/>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example4cd">Подтверждение пароля</label>
-                      <input type="password" id="form3Example4cd" class="form-control" placeholder="Подтвердите свой пароль"/>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-primary btn-lg">Создать аккаунт</button>
-                  </div>
+                <form class="mx-1 mx-md-4" action='inc/signup.php' method="post" enctype="multipart/form-data">
+                  <label class="form-label" for="form3Example1c">ФИО</label>
+                  <input type="text" name="full_name" id="form3Example1c" class="form-control" placeholder="Введите свое полное имя"/>
+                  <label class="form-label" for="form3Example1c">Логин</label>
+                  <input type="text" name="login" id="form3Example1c" class="form-control" placeholder="Введите свой логин"/>
+                  <label class="form-label" for="form3Example1c">Почта</label>
+                  <input type="email" name="email" id="form3Example1c" class="form-control" placeholder="Введите адрес своей почты"/>
+                  <label class="form-label" for="form3Example1c">Изображение профиля</label>
+                  <input type="file" name="avatar" id="form3Example1c" class="form-control"/>
+                  <label class="form-label" for="form3Example3c">Пароль</label>
+                  <input type="password" name="password" id="form3Example3c" class="form-control" placeholder="Введите пароль"/>
+                  <label class="form-label" for="form3Example4cd">Подтверждение пароля</label>
+                  <input type="password" name="password-confirm" id="form3Example4cd" class="form-control" placeholder="Подтвердите свой пароль"/>
+                  <button type="button" class="btn btn-primary btn-lg">Создать аккаунт</button>
                   <p>
                     У вас уже есть аккаунт? - <a href="login.php">авторизируйтесь</a>
                   </p>
