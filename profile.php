@@ -22,6 +22,6 @@ if (!$_SESSION['user']) {
         <a href="#"><?= $_SESSION['user']['email'] ?></a>
         <a href="inc/logout.php" class="logout">Выход</a>
     </form>
-
+                                
 </body>
 </html>
