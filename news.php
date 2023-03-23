@@ -1,3 +1,19 @@
+<?php
+include_once "./templates/generation.php";
+$id_article = $_REQUEST["id_article"];
+$comment = $_REQUEST["comment"];
+ 
+function send_comment ($mysqli, $comment, $id_article) {
+    $sql = "INSERT INTO `comments` (`comment`, `id_article`, `date`) VALUES ('$comment', '$id_article', CURRENT_TIMESTAMP)";
+    $mysqli -> query($sql);
+    echo '<script>location.replace("https://schooldirectory.ru/news.html' . $id_article . '");</script>'; exit;
+}
+ 
+if (isset($_REQUEST['doGo']) === true) {
+    send_comment($mysqli, $_REQUEST['comment'], $id_article);
+}
+ 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +37,7 @@
               <li><a href="index.html" class="nav-link px-2 text-white">Главная</a></li>
               <li><a href="rasp.html" class="nav-link px-2 text-white">Расписания</a></li>
               <li><a href="events.html" class="nav-link px-2 text-white">Мероприятия</a></li>
-              <li><a href="about.html" class="nav-link px-2 text-secondary">Про нас</a></li>
+              <li><a href="about.html" class="nav-link px-2 text-white">Про нас</a></li>
               <li><a href="otzyvy.html" class="nav-link px-2 text-white">Отзывы</a></li>
             </ul>
     
@@ -37,6 +53,29 @@
         </div>
       </header>
       <div class="maindiv">
-        
+      <?php function generation_posts_index ($mysqli) {
+      $sql = "SELECT * FROM `articles`";
+      $res = $mysqli -> query($sql);
+      if ($res -> num_rows > 0) {
+          while ($resArticle = $res -> fetch_assoc()) {
+            ?>
+            <div class="news-container">
+                <div class="news-card">
+                    <div class="content">
+                        <h2><a href="post.php?id_article=<?= $resArticle['id'] ?>"> <?= $resArticle['title']?></a></h2>
+                        <p><?= mb_substr($resArticle['text'], 0, 158, 'UTF-8') ?> </p>
+                        <a href="news.html">Подробнее</a>
+                    </div>
+                    <img src="https://media.discordapp.net/attachments/872029012006944809/1087986861168939048/642_20230322153104.png?width=1120&height=1120">
+                </div>
+            </div>
+            <?php
+              }
+    } else {
+        // Если нет статей то выводим надпись
+        echo "Нет статей";
+    }
+}
+  ?>
       </div>
 </body>

@@ -1,7 +1,12 @@
 <?php
+    $server_name = "127.0.0.1";
+    $username = "root";
+    $password = "";
+    $BDname = "zakharng1";
 
-    $connect = mysqli_connect('127.0.0.1', 'root', '', 'mpit');
+    $mysqli = new mysqli($server_name, $username, $password, $BDname);
 
-    if (!$connect) {
-        die('Error connect to DataBase');
-    }
+ 
+    if ($mysqli -> connect_error) {
+        printf("Соединение не удалось: %s\n", $mysqli -> connect_error);
+    };
