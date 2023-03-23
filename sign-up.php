@@ -23,7 +23,7 @@
             <div class="row justify-content-center">
               <div class="col-md-10 col-lg-6 col-xl-6 order-2 order-lg-1">
                 <p class="text-center h2 fw-bold mb-5 mx-1 mx-md-4 mt-4">Зарегистрироваться</p>
-                <form class="mx-1 mx-md-4" action='inc/signup.php' method="post" enctype="multipart/form-data">
+                <form class="mx-1 mx-md-4" action="inc/signup.php" method="post" enctype="multipart/form-data">
                   <label class="form-label" for="form3Example1c">ФИО</label>
                   <input type="text" name="full_name" id="form3Example1c" class="form-control" placeholder="Введите свое полное имя"/>
                   <label class="form-label" for="form3Example1c">Логин</label>
