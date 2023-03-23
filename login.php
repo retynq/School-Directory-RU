@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Авторизация и регистрация</title>
+    <title>Авторизация</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -24,18 +24,18 @@
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <label class="form-label" for="form3Example1c">Логин</label>
-                      <input type="text" id="form3Example1c" class="form-control" placeholder="Введите свой логин"/>
+                      <input type="text" name="login" id="form3Example1c" class="form-control" placeholder="Введите свой логин"/>
                     </div>
                   </div>
                   <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <label class="form-label" for="form3Example3c">Пароль</label>
-                      <input type="password" id="form3Example3c" class="form-control" placeholder="Введите пароль"/>
+                      <input type="password" name="password" id="form3Example3c" class="form-control" placeholder="Введите пароль"/>
                     </div>
                   </div>
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-outline-primary btn-lg" style="width: 400px;">Войти</button>
+                    <button type="submit" class="btn btn-outline-primary btn-lg" style="width: 400px;">Войти</button>
                   </div>
                   <p>
                     У вас нет аккаунта? - <a href="sign-up.php">зарегистрируйтесь</a>
