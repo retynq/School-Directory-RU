@@ -13,9 +13,6 @@ if (!$_SESSION['user']) {
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
-    <!-- Профиль -->
-
     <form>
         <img src="<?= $_SESSION['user']['avatar'] ?>" width="200" alt="">
         <h2 style="margin: 10px 0;"><?= $_SESSION['user']['full_name'] ?></h2>

@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+if ($_SESSION['user']) {
+    header('Location: profile.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,27 +26,21 @@
             <div class="row justify-content-center">
               <div class="col-md-10 col-lg-6 col-xl-6 order-2 order-lg-1">
                 <p class="text-center h2 fw-bold mb-5 mx-1 mx-md-4 mt-4">Вход в аккаунт</p>
-                <form class="mx-1 mx-md-4" action="" method="">
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
+                <form class="mx-1 mx-md-4" action="inc/signin.php" method="post">
                       <label class="form-label" for="form3Example1c">Логин</label>
                       <input type="text" name="login" id="form3Example1c" class="form-control" placeholder="Введите свой логин"/>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
                       <label class="form-label" for="form3Example3c">Пароль</label>
                       <input type="password" name="password" id="form3Example3c" class="form-control" placeholder="Введите пароль"/>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="submit" class="btn btn-outline-primary btn-lg" style="width: 400px;">Войти</button>
-                  </div>
+                      <button type="submit" class="btn btn-outline-primary btn-lg" style="width: 400px;">Войти</button>
                   <p>
                     У вас нет аккаунта? - <a href="sign-up.php">зарегистрируйтесь</a>
                   </p>
+                  <?php
+            if ($_SESSION['message']) {
+                echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
+            }
+            unset($_SESSION['message']);
+        ?>
                 </form>
               </div>
               <div class="col-md-10 col-lg-6 col-xl-5 d-flex align-items-center order-1 order-lg-2">
