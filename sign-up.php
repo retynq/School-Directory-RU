@@ -32,9 +32,6 @@
                   <label class="form-label mt-2" for="form3Example4cd">Подтверждение пароля</label>
                   <input type="password" name="password-confirm" id="form3Example4cd" class="form-control" placeholder="Подтвердите свой пароль"/>
                   <button type="button" class="btn btn-primary btn-lg mt-3 mb-1">Создать аккаунт</button>
-                  <p>
-                    У вас уже есть аккаунт? - <a href="login.php">авторизируйтесь</a>
-                  </p>
                   <p class="msg">
                     какое то сообщение 
                   </p>
