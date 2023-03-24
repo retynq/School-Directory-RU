@@ -2,7 +2,7 @@
     include_once "./templates/generation.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -49,22 +49,22 @@
               <div class="carousel-item active">
                 <img src="https://media.discordapp.net/attachments/872029012006944809/1088371371307970620/IMG_1701.jpg?width=1494&height=1120" class="d-block w-100" style="z-index: -1;">
                 <div class="carousel-caption">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <h5>текст</h5>
+                  <p>текст первого слайда№</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="https://media.discordapp.net/attachments/872029012006944809/1088371372297822218/IMG_1702.jpg?width=1494&height=1120" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <h5>текст</h5>
+                  <p>текст второго слайда</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="https://media.discordapp.net/attachments/872029012006944809/1088371373094744074/IMG_1703.jpg?width=1494&height=1120" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Текст</h5>
+                  <p>текст третьего слайда</p>
                 </div>
               </div>
             </div>
