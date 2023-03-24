@@ -25,6 +25,9 @@
           <li><a href="events.html" class="nav-link px-2 text-white">Мероприятия</a></li>
           <li><a href="about.html" class="nav-link px-2 text-white">Про нас</a></li>
           <li><a href="otzyvy.html" class="nav-link px-2 text-white">Отзывы</a></li>
+          
+      </div>
+    </div>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
