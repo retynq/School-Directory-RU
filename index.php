@@ -50,7 +50,7 @@
                 <img src="https://media.discordapp.net/attachments/872029012006944809/1088371371307970620/IMG_1701.jpg?width=1494&height=1120" class="d-block w-100" style="z-index: -1;">
                 <div class="carousel-caption">
                   <h5>текст</h5>
-                  <p>текст первого слайда№</p>
+                  <p>текст первого слайда</p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -155,11 +155,10 @@
         </div>
         <footer class="footer">
           <div class="container-footer">
-            <div class="row d-flex" style="flex-wrap: wrap;">
-              <div class="footer-col">
+          <div class="footer-col">
                 <h4>Сайт</h4>
                 <ul>
-                  <li><a href="#">О нас</a></li>
+                  <li><a href="about.html">О нас</a></li>
                   <li><a href="#">Политика конфиденциальности</a></li>
                   <li><a href="#">Партнерская программа</a></li>
                 </ul>
@@ -180,8 +179,7 @@
                   <li><a href="#">Номер</a></li>
                   <li><a href="#">Дискорд</a></li>
                 </ul>
-              </div>
-            </div>
+              </div>  
           </div>
        </footer>
     </div>  
