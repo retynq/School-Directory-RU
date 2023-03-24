@@ -19,10 +19,10 @@
 
         $password = md5($password);
 
-        mysqli_query($connect, "INSERT INTO `users` (`id`, `full_name`, `login`, `email`, `password`, `avatar`) VALUES (NULL, '$full_name', '$login', '$email', '$password', '$path')");
+        mysqli_query($connect, "INSERT INTO `mpit` (`id`, `full_name`, `login`, `email`, `password`, `avatar`) VALUES (NULL, '$full_name', $login', '$email', '$password', '$avatar')");
 
         $_SESSION['message'] = 'Регистрация прошла успешно!';
-        header('Location: ../index.php');
+        header('Location: ../login.php');
 
 
     } else {

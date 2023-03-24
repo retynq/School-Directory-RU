@@ -50,7 +50,7 @@ if ($_SESSION['user']) {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
 </section>

@@ -15,7 +15,7 @@
     <script src='main.js'></script>
 </head>
 <body>
-<section style="background-color: #eee; height: 1000px;">
+<section style="background-color: linear-gradient(45deg, #ff6363, #7009C1, #b742cb); height: 1000px;">
   <div class="container h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-lg-12 col-xl-11">
@@ -37,7 +37,7 @@
                   <input type="password" name="password" id="form3Example3c" class="form-control" placeholder="Введите пароль"/>
                   <label class="form-label mt-2" for="form3Example4cd">Подтверждение пароля</label>
                   <input type="password" name="password-confirm" id="form3Example4cd" class="form-control" placeholder="Подтвердите свой пароль"/>
-                  <button type="submit" class="btn btn-primary btn-lg mt-3 mb-1">Создать аккаунт</button>
+                  <button type="submit" class="btn btn-outline-primary btn-lg mt-3 mb-1">Создать аккаунт</button>
                   <p>
                     Уже есть аккаунт? - <a href="login.php">авторизоваться</a>
                   </p>
@@ -53,7 +53,7 @@
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
                   class="img-fluid" alt="Фотография">
               </div>
-            </div>
+            </div> 
           </div>
         </div>
       </div>
