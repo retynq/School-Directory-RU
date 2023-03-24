@@ -1,5 +1,5 @@
 <?php
-    include_once "mysqlConnect.php";
+    include_once "inc/connect.php";
     function generation_head_menu ($mysqli) {
         $sql = "SELECT * FROM `topic`";
         $resSQL = $mysqli -> query($sql);

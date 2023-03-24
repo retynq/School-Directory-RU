@@ -1,3 +1,6 @@
+<?php 
+    include_once "./templates/generation.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,41 +99,22 @@
             </div>
         </div>
         <h1 style="margin-top: 100px; margin-left: 600px; font-weight: 700;">Новости</h1>
+        <?php 
+        generation_head_menu($mysqli);
+    ?>
         <div class="news-body">
             <div class="news-container">
                 <div class="news-card">
                     <div class="content">
-                        <h2>Заголовок</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia debitis magnam iure, quisquam laudantium eveniet hic, laborum nemo</p>
+                    <?php 
+            generation_posts_index($mysqli);
+        ?>
                         <a href="news.html">Подробнее</a>
                     </div>
                     <img src="https://media.discordapp.net/attachments/872029012006944809/1087979852772167810/641_20230322150313.png?width=1120&height=1120">
                 </div>
             </div>
-            <?php function generation_posts_index ($mysqli) {
-      $sql = "SELECT * FROM `articles`";
-      $res = $mysqli -> query($sql);
-      if ($res -> num_rows > 0) {
-          while ($resArticle = $res -> fetch_assoc()) {
-            ?>
-            <div class="news-container">
-                <div class="news-card">
-                    <div class="content">
-                        <h2><a href="post.php?id_article=<?= $resArticle['id'] ?>"> <?= $resArticle['title']?></a></h2>
-                        <p><?= mb_substr($resArticle['text'], 0, 158, 'UTF-8') ?> </p>
-                        <a href="news.html">Подробнее</a>
-                    </div>
-                    <img src="https://media.discordapp.net/attachments/872029012006944809/1087986861168939048/642_20230322153104.png?width=1120&height=1120">
-                </div>
-            </div>
-            <?php
-              }
-    } else {
-        // Если нет статей то выводим надпись
-        echo "Нет статей";
-    }
-}
-  ?>
+        </div>
         <h1 style="font-weight: 700; margin-left: 560px;">Расписание</h1>
         <div class="mx-auto" style="height: 600px; width: 80%;">
             <div class="d-flex">
