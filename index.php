@@ -20,7 +20,7 @@
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <img src="https://media.discordapp.net/attachments/872029012006944809/1088339182163857438/643_20230323145111.png?width=1024&height=1024" style="height: 55px;">
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="index.html" class="nav-link px-2 text-secondary">Главная</a></li>
+          <li><a href="index.php" class="nav-link px-2 text-secondary">Главная</a></li>
           <li><a href="rasp.html" class="nav-link px-2 text-white">Расписания</a></li>
           <li><a href="events.html" class="nav-link px-2 text-white">Мероприятия</a></li>
           <li><a href="about.html" class="nav-link px-2 text-white">Про нас</a></li>
@@ -99,21 +99,31 @@
             </div>
         </div>
         <h1 style="margin-top: 100px; margin-left: 600px; font-weight: 700;">Новости</h1>
-        <?php 
-        generation_head_menu($mysqli);
-    ?>
+        <div class="d-flex" style="margin-left: 50px;">
         <div class="news-body">
             <div class="news-container">
                 <div class="news-card">
                     <div class="content">
-                    <?php 
-            generation_posts_index($mysqli);
-        ?>
-                        <a href="news.html">Подробнее</a>
+                        <h2>Заголовок</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod odio ab assumenda unde animi consectetur soluta velit tempore quo, neque alias exercitationem consequuntur</p>
+                        <a href="news.php">Подробнее</a>
                     </div>
                     <img src="https://media.discordapp.net/attachments/872029012006944809/1087979852772167810/641_20230322150313.png?width=1120&height=1120">
                 </div>
             </div>
+        </div>
+        <div class="news-body">
+            <div class="news-container">
+                <div class="news-card">
+                    <div class="content">
+                        <h2>Заголовок</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod odio ab assumenda unde animi consectetur soluta velit tempore quo, neque alias exercitationem consequuntur</p>
+                        <a href="news.php">Подробнее</a>
+                    </div>
+                    <img src="https://media.discordapp.net/attachments/872029012006944809/1087979852772167810/641_20230322150313.png?width=1120&height=1120">
+                </div>
+            </div>
+        </div>
         </div>
         <h1 style="font-weight: 700; margin-left: 560px;">Расписание</h1>
         <div class="mx-auto" style="height: 600px; width: 80%;">
@@ -123,21 +133,21 @@
                     <div class="card-body">
                       <h5 class="card-title">Расписание 1/2 смены</h5>
                       <p class="card-text">Расписание уроков 1/2 смены на эту неделю</p>
-                      <button class="purple-btn" href="#">Посмотреть</button>
+                      <button class="purple-btn" href="rasp.html">Посмотреть</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; max-height: 460px; margin-left: 50px;">
                   <a class="gradientimg"><img src="https://i.pinimg.com/originals/db/38/90/db3890d547805982b968202300b22731.jpg" class="card-img-top" alt="..." style="max-height: 250px; max-width: 300px; overflow: hidden;"></a>                    <div class="card-body">
                       <h5 class="card-title">Расписание кружков</h5>
                       <p class="card-text">Расписание кружков на эту неделю</p>
-                      <button class="purple-btn" href="#">Посмотреть</button>
+                      <button class="purple-btn" href="rasp.html">Посмотреть</button>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; max-height: 460px; margin-left: 50px;">
                   <a class="gradientimg"><img src="https://i.pinimg.com/originals/db/38/90/db3890d547805982b968202300b22731.jpg" class="card-img-top" alt="..." style="max-height: 250px; max-width: 300px; overflow: hidden;"></a>                    <div class="card-body">
                       <h5 class="card-title">Расписание мероприятий</h5>
                       <p class="card-text">Расписание различных мероприятий на эту неделю</p>
-                      <button class="purple-btn" href="#">Посмотреть</button>
+                      <button class="purple-btn" href="rasp.html">Посмотреть</button>
                     </div>
                 </div>
             </div>
@@ -145,7 +155,7 @@
         </div>
         <footer class="footer">
           <div class="container-footer">
-            <div class="row">
+            <div class="row d-flex" style="flex-wrap: wrap;">
               <div class="footer-col">
                 <h4>Сайт</h4>
                 <ul>
@@ -157,10 +167,10 @@
               <div class="footer-col">
                 <h4>Навигация</h4>
                 <ul>
-                  <li><a href="#">Главная</a></li>
-                  <li><a href="#">Мероприятия</a></li>
-                  <li><a href="#">Отзывы</a></li>
-                  <li><a href="#">Новости</a></li>
+                  <li><a href="index.php">Главная</a></li>
+                  <li><a href="events.html">Мероприятия</a></li>
+                  <li><a href="otzyvy.html">Отзывы</a></li>
+                  <li><a href="news.php">Новости</a></li>
                 </ul>
               </div>
               <div class="footer-col">

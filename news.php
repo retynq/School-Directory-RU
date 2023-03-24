@@ -34,7 +34,7 @@ if (isset($_REQUEST['doGo']) === true) {
             <img src="https://media.discordapp.net/attachments/872029012006944809/1088339182163857438/643_20230323145111.png?width=1024&height=1024" style="height: 55px;">
     
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="index.html" class="nav-link px-2 text-white">Главная</a></li>
+              <li><a href="index.php" class="nav-link px-2 text-white">Главная</a></li>
               <li><a href="rasp.html" class="nav-link px-2 text-white">Расписания</a></li>
               <li><a href="events.html" class="nav-link px-2 text-white">Мероприятия</a></li>
               <li><a href="about.html" class="nav-link px-2 text-white">Про нас</a></li>

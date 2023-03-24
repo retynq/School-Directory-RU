@@ -31,7 +31,7 @@ if ($_SESSION['user']) {
                       <input type="text" name="login" id="form3Example1c" class="form-control" placeholder="Введите свой логин"/>
                       <label class="form-label" for="form3Example3c">Пароль</label>
                       <input type="password" name="password" id="form3Example3c" class="form-control" placeholder="Введите пароль"/>
-                      <button type="submit" class="btn btn-outline-primary btn-lg" style="width: 400px;">Войти</button>
+                      <button type="submit" class="btn btn-outline-primary btn-lg" style="width: 385px; margin-top: 15px;">Войти</button>
                   <p>
                     У вас нет аккаунта? - <a href="sign-up.php">зарегистрируйтесь</a>
                   </p>
